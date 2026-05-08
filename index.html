@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS-TEAM | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <div class="container">
+        <div class="login-card">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Logo PS-TEAM" class="site-logo" style="width: 100px; height: 100px; object-fit: contain;" />
+            </div>
+            
+            <h1 class="title">PS-TEAM</h1>
+            <p class="subtitle">AUTENTICAÇÃO DE ACESSO</p>
+
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">USUÁRIO</label>
+                    <input type="text" id="username" placeholder="Digite seu usuário" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="key">CHAVE / PASSWORD</label>
+                    <input type="password" id="key" placeholder="••••••••••••" required>
+                </div>
+
+                <div class="options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Lembrar acesso
+                    </label>
+                    <a href="#" class="forgot">Esqueceu a chave?</a>
+                </div>
+
+                <button type="submit" id="login-btn">
+                    <span class="btn-text">ENTRAR</span>
+                    <div class="loader" id="btn-loader"></div>
+                </button>
+            </form>
+
+            <div id="status-message"></div>
+
+            <div class="footer">
+                <p>&copy; 2026 PS-TEAM OFFICIAL. Todos os direitos reservados.</p>
+                <div class="status-dot"></div> <span class="server-status">SERVIDORES ONLINE</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
